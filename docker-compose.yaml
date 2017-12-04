@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  node_test:
+    image: mhart/alpine-node:9.2.0
+    volumes:
+      - ./node/src:/tmp/node/src
+    command: sh -c 'cd /tmp/node/src/hello && node app.js'
+
+  golang_test:
+    image: golang:1.9.2-alpine3.6
+    volumes:
+      - ./go/src:/go/src
+    command: sh -c 'cd /go/src/hello && go run main.go'
