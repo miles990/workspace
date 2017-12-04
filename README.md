@@ -1,10 +1,13 @@
 # Develop WorkSpace
-### Develop Golang & Node.js app quickly.
+Develop Golang & Node.js app quickly.
 
 ## Required
 [docker & docker-compose](https://store.docker.com/search?type=edition&offering=community)
 
-## RUN
+## Set Executable Path
+See [docker-compose.yml](docker-compose.yml).
+
+## Run App
 ### Golang
 ```
 docker-compose run --rm golang_test
